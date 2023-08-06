@@ -135,8 +135,4 @@ resource "azurerm_sql_database" "my_sql_database" {
   collation           = var.sql_database_collation
 }
 
- 
 
-output "aks_cluster_kube_config" {
-  value = azurerm_kubernetes_cluster.my_aks_cluster.kube_config_raw
-}
